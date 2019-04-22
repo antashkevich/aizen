@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Aizen</title>
+</head>
+
+<body>
+	<div class="app">
+		<!--Header-->
+		<header class="header">
+			<div class="container">
+				<div class="header-info">
+					<a href="#" class="logo"></a>
+					<nav class="header-nav">
+						<ul>
+							<li class="active-item">
+								<a href="#">Dashboard</a>
+							</li>
+							<li>
+								<a href="#">Monitoring</a>
+							</li>
+							<li>
+								<a href="#">Model</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-user">
+					<span class="header-user_icon"></span>
+					<span class="header-user_name">JungSeok Kang</span>
+					<button class="header-user_drop-icon"></button>
+				</div>
+			</div>
+		</header>
+
+		<!--wr-content-title -->
+		<section class="wr-content-title">
+			<div class="container">
+				<div class="content-title-select">
+					<select>
+						<option value="Mobile Loan A">Mobile Loan A</option>
+						<option value="Mobile Loan B">Mobile Loan B</option>
+						<option value="Mobile Loan C">Mobile Loan C</option>
+					</select>
+				</div>
+				<a href="./index.html">Back To Dashboard</a>
+			</div>
+		</section>
+
+		<!--wr-OpportunityRisks -->
+		<section class="wr-OpportunityRisks small-tables">
+			<div class="container">
+				<div class="opportunityRisks-tables">
+					<div class="table-block block-style opportunity">
+						<div class="table-block_header">
+							<span class="table-block_header-title">Opportunity</span>
+						</div>
+						<table class="table table-opportunity">
+							<tr>
+								<th class="table_action">Action</th>
+								<th class="table_group">Group</th> 
+								<th class="table_volume">Volume</th>
+								<th class="table_delinquency">Delinquency</th> 
+								<th class="table_score">AI score</th>
+							</tr>
+							<tr>
+								<td class="table_action">
+									<img src="./images/icon-money-table-plus.png" alt="">
+								</td>
+								<td class="table_group">NY | Male | 40s | Media</td> 
+								<td class="table_volume">$25.0M</td>
+								<td class="table_delinquency">1.93%</td>
+								<td class="table_score">
+									<div>
+										<span class="table_score-percent first-value"></span>
+										<span class="table_score-value">95/100</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="table-block block-style default-table">
+							<div class="table-block_header">
+								<span class="table-block_header-title">Opportunity</span>
+							</div>
+							<table class="table table-risks">
+								<tr>
+									<th class="table_expected-volume">Expected Volume</th>
+									<th class="table_expected-revenue">Expected Revenue</th> 
+									<th class="table_risk-cost">Risk Cost</th>
+									<th class="table_expected-net-income">Expected Net Income</th>
+									<th class="table_delinquency">Delinquency</th> 
+								</tr>
+								<tr>
+									<td class="table_expected-volume">$30.0M</td>
+									<td class="table_expected-revenue">$0.1M</td> 
+									<td class="table_risk-cost">$0.0M</td>
+									<td class="table_expected-net-income">$0.1M</td>
+									<td class="table_delinquency">1.9%</td>
+								</tr>
+							</table>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<!--wr-steps -->
+		<section class="wr-steps">
+			<div class="container">
+				<h3 class="wr-steps_title">Step 3: Split the test programme and decide how you will validate</h3>
+				<ul>
+					<li class="wr-steps_step active">
+						<span class="wr-steps_step-icon">1</span>
+						<span class="wr-steps_step-title">Group Portfolio </span>
+					</li>
+					<li class="wr-steps_step active">
+						<span class="wr-steps_step-icon">2</span>
+						<span class="wr-steps_step-title">Impact Analysis</span>
+					</li>
+					<li class="wr-steps_step active">
+						<span class="wr-steps_step-icon">3</span>
+						<span class="wr-steps_step-title">Test Split</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!--wr-step-content -->
+		<section class="wr-step-content">
+			<div class="container">
+				<div class="step-content block-style step3">
+					<div class="step-content_block">
+						<h3>1. Select the size of your test programme</h3>
+						<span class="subtitle">The percentage of data allocated to the test program set – must be between 0% – 80%</span>
+						<div class="step-content_step3-slider">
+							<input type="range" min="1" max="100" value="20" class="slider" id="step3-slider">
+							<div class="active-range">
+								<p class="range-title">TEST</p>
+								<p><span class="slider-active"></span>%(<span class="slider-active-cost"></span>M)</p>
+							</div>
+							<div class="rest-range">
+								<p class="range-title">HOLDOUT</p>
+								<p><span class="slider-rest"></span>%(<span class="slider-rest-cost"></span>M)</p>
+							</div>
+						</div>
+					</div>
+					<span class="vertical-line"></span>
+					<div class="step-content_block validation-goal">
+						<h3>2. Select a validation goal</h3>
+						<div>
+							<div class="validation-goal_step">
+								<span class="icon-people"></span>
+								<p>10% of the group get an increase of loan amount by 20%</p>
+							</div>
+							<span class="vertical-line"></span>
+							<div class="validation-goal_step">
+								<span class="icon-period"></span>
+								<p>Test period</p>
+							</div>
+							<span class="vertical-line"></span>
+							<div class="validation-goal_step">
+								<div class="validation-goal_step-title">
+									<span >1.93% </span>
+									<span class="icon-edit"></span>
+								</div>								
+								<p>Delinquency with 20% increase in loan amount</p>
+							</div>
+						</div>
+						<button>Save the option</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--wr-observ-period -->
+		<section class="wr-observ-period">
+				<div class="container">
+					<div class="observ-period">
+						<span class="observ-period_caption">Observation period</span>
+						<div class="observ-period_content">
+							<div>							
+								<label><input type="date" data-placeholder="2018 - 12" required aria-required="true" /></label>
+								<label><input type="date" data-placeholder="2019 - 02" required aria-required="true" /></label>
+							</div>
+							<p>
+								<span>If applies all,</span>
+								<span>+14% PROJECTED NET INCOME</span>
+								<span>vs. status-quo</span>
+							</p>
+							<a href="#">Run the module</a>
+						</div>						
+					</div>
+				</div>
+		</section>
+
+	</div>
+
+		<!-- JS -->
+		<script type="text/javascript" src="js/rangeSliderStep3.js"></script>
+
+</body>
+</html>
